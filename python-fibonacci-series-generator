@@ -1,0 +1,16 @@
+n = int(input("Enter the number of terms: "))
+a, b = 0, 1
+if n <= 0:
+    print("Please enter a positive number")
+else:
+    print("Fibonacci Series:")
+    for i in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+
+
+OUTPUT:
+
+Enter the number of terms: 10
+Fibonacci Series:
+0 1 1 2 3 5 8 13 21 34 
